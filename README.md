@@ -119,7 +119,7 @@ For more details, please check the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
 
 ## 📞 Support & Questions
 
-If you have any questions or need help, feel free to open an issue or reach out via GitHub Discussions. You can also drop an email to [vijay.saravanan0707@gmail.com](mailto:vijay.saravanan0707@gmail.com?subject=Docker 101)
+If you have any questions or need help, feel free to open an issue or reach out via GitHub Discussions. You can also drop an email to [vijay.saravanan0707@gmail.com](mailto:vijay.saravanan0707@gmail.com?subject=Docker-101)
 We’re happy to help you on your Docker learning journey!
 
 ---
