@@ -1,30 +1,40 @@
 # Docker 101 Series
 
+<p align="center">
+  <img src="https://path-to-your-image/docker-logo.png" alt="Docker Logo" width="300px">
+</p>
+
 ## 🚀 Welcome to Docker 101!
 
-**Docker 101** is a beginner-friendly series designed to help you learn Docker from scratch. Whether you're new to containerization or just looking to solidify your understanding, this repository provides step-by-step tutorials, hands-on exercises, and real-world examples to guide you through Docker’s core concepts and commands.
+**Docker 101** is a beginner-friendly series designed to help you learn Docker from scratch. This repository will guide you through the core concepts of containerization, how to build, manage, and deploy containerized applications effectively, and provide hands-on exercises to solidify your learning.
 
 ### 📋 What You Will Learn:
 - What Docker is and why containerization is important.
-- How to install and configure Docker on different platforms.
-- Docker commands for managing containers and images.
-- Writing `Dockerfile` to create custom Docker images.
-- Managing data with Docker volumes.
-- Container networking and how to connect containers.
-- Orchestrating multi-container applications using Docker Compose.
-- How Docker fits into CI/CD pipelines.
-  
+- Setting up Docker on your machine.
+- Understanding Docker images and containers.
+- Building and managing Docker images with Dockerfile.
+- Networking in Docker: connecting containers.
+- Docker Compose for multi-container applications.
+- Best practices for Dockerfile and image management.
+- Hands-on projects to reinforce your learning.
+
+---
+
+## 📚 Prerequisite
+
+There are no strict prerequisites for this series, but familiarity with command line basics will be helpful. For learners interested in container orchestration, we recommend checking out our **[Kubernetes 101 Series](https://github.com/YOUR_USERNAME/kubernetes-101-series)** after completing this Docker series.
+
 ---
 
 ## 📚 Table of Contents
 
 1. [Introduction to Docker](#module-1-introduction-to-docker)
-2. [Docker Basics & Commands](#module-2-docker-basics--commands)
-3. [Docker Images & Dockerfile](#module-3-docker-images--dockerfile)
-4. [Volumes & Persistent Storage](#module-4-volumes--persistent-storage)
-5. [Networking in Docker](#module-5-networking-in-docker)
+2. [Docker Architecture](#module-2-docker-architecture)
+3. [Working with Docker Images](#module-3-working-with-docker-images)
+4. [Running Docker Containers](#module-4-running-docker-containers)
+5. [Docker Networking](#module-5-docker-networking)
 6. [Docker Compose](#module-6-docker-compose)
-7. [CI/CD with Docker](#module-7-cicd-with-docker)
+7. [Best Practices for Docker](#module-7-best-practices-for-docker)
 8. [Projects & Real-World Use Cases](#projects--real-world-use-cases)
 9. [Contributing](#contributing)
 
@@ -33,10 +43,10 @@
 ## 🧑‍💻 Getting Started
 
 ### Prerequisites:
-- **Basic Command Line Knowledge**: Some familiarity with Linux/Windows command line will be helpful.
-- **Install Docker**: Make sure Docker is installed on your machine. You can follow [this guide](https://docs.docker.com/get-docker/) to install Docker for your platform.
+- **Basic Command Line Knowledge**: Familiarity with terminal commands will help you follow along with the exercises.
+- **Install Docker**: Set up Docker on your machine by following the official [Docker installation guide](https://docs.docker.com/get-docker/).
 
-Once Docker is installed, verify by running:
+Once you have Docker installed, verify the installation by running:
 ```bash
 docker --version
 ```
@@ -46,92 +56,128 @@ docker --version
 ## 📘 Modules Overview
 
 ### Module 1: [Introduction to Docker](./01-introduction)
-Learn what Docker is, how it compares to virtual machines, and why containerization is a game changer. This module covers Docker’s architecture and helps you get Docker set up on your machine.
+Learn the basics of Docker, the problems it solves, and the core concepts of containerization. This module explains why Docker is essential for modern software development and deployment.
 
-**Hands-on Exercise**: Running your first Docker container with `hello-world`.
+**Hands-on Exercise**: Install Docker and run your first Docker container.
 
----
-
-### Module 2: [Docker Basics & Commands](./02-basic-commands)
-Get familiar with the most essential Docker commands! Learn how to create, run, stop, and remove containers, as well as manage Docker images and logs.
-
-**Hands-on Exercise**: Running an `nginx` container, inspecting logs, and stopping the container.
+<p align="center">
+  <img src="https://path-to-your-image/docker-overview.png" alt="Docker Overview" width="600px">
+</p>
+*Diagram illustrating the Docker ecosystem and its components.*
 
 ---
 
-### Module 3: [Docker Images & Dockerfile](./03-images-dockerfile)
-Understand how Docker images work and how to create your own using a `Dockerfile`. This module explains best practices for writing Dockerfiles and building efficient images.
+### Module 2: [Docker Architecture](./02-architecture)
+Understand the architecture of Docker, including the Docker Engine, images, containers, and the Docker daemon. Learn how these components work together to facilitate containerization.
 
-**Hands-on Exercise**: Write a Dockerfile for a simple web application and build your own custom image.
+**Hands-on Exercise**: Explore the Docker architecture by running basic Docker commands.
 
----
-
-### Module 4: [Volumes & Persistent Storage](./04-volumes)
-Learn how to manage persistent data using Docker volumes. In this module, you’ll see how to store data across container restarts and share data between containers.
-
-**Hands-on Exercise**: Create a containerized database with persistent storage using Docker volumes.
+<p align="center">
+  <img src="https://path-to-your-image/docker-architecture.png" alt="Docker Architecture" width="600px">
+</p>
+*Diagram showing the Docker architecture, including the Docker daemon and client interaction.*
 
 ---
 
-### Module 5: [Networking in Docker](./05-networking)
-Understand Docker networking and how to connect containers together. Explore bridge networks, host networks, and how to expose container ports.
+### Module 3: [Working with Docker Images](./03-working-with-docker-images)
+Learn how to create, manage, and optimize Docker images. Understand the concept of layers in images and how to use Dockerfile to automate image builds.
 
-**Hands-on Exercise**: Create a multi-container network (e.g., a web server and database) and connect them using Docker networking.
+**Hands-on Exercise**: Create a Dockerfile and build a custom image for a simple application.
+
+<p align="center">
+  <img src="https://path-to-your-image/docker-image-layers.png" alt="Docker Image Layers" width="600px">
+</p>
+*Illustration showing the concept of image layers in Docker.*
+
+---
+
+### Module 4: [Running Docker Containers](./04-running-docker-containers)
+Discover how to run and manage Docker containers, including starting, stopping, and removing containers. Learn about container lifecycle and management commands.
+
+**Hands-on Exercise**: Run a web server in a Docker container and access it from your browser.
+
+<p align="center">
+  <img src="https://path-to-your-image/docker-container-lifecycle.png" alt="Docker Container Lifecycle" width="600px">
+</p>
+*Diagram explaining the lifecycle of a Docker container.*
+
+---
+
+### Module 5: [Docker Networking](./05-docker-networking)
+Dive into Docker networking, learn how containers communicate with each other and external systems. Understand the different network modes available in Docker.
+
+**Hands-on Exercise**: Set up a multi-container application and manage networking between them.
+
+<p align="center">
+  <img src="https://path-to-your-image/docker-networking-diagram.png" alt="Docker Networking" width="600px">
+</p>
+*Illustration showing different Docker networking modes (bridge, host, overlay).*
 
 ---
 
 ### Module 6: [Docker Compose](./06-docker-compose)
-Docker Compose simplifies managing multi-container applications. This module will guide you through defining services with `docker-compose.yml` files and how to manage them.
+Get started with **Docker Compose**, a tool for defining and running multi-container Docker applications. Learn how to create `docker-compose.yml` files to orchestrate your applications.
 
-**Hands-on Exercise**: Create a `docker-compose.yml` file for a full-stack application (e.g., frontend, backend, and database).
+**Hands-on Exercise**: Use Docker Compose to set up a multi-container application (e.g., a web app with a database).
+
+<p align="center">
+  <img src="https://path-to-your-image/docker-compose-diagram.png" alt="Docker Compose Diagram" width="600px">
+</p>
+*Diagram explaining how Docker Compose manages multi-container applications.*
 
 ---
 
-### Module 7: [CI/CD with Docker](./07-ci-cd)
-Integrate Docker into your Continuous Integration/Continuous Deployment (CI/CD) pipelines. Learn how Docker can be used to automate the building and deployment of your applications.
+### Module 7: [Best Practices for Docker](./07-best-practices)
+Learn best practices for working with Docker, including image optimization, security considerations, and managing container lifecycle effectively.
 
-**Hands-on Exercise**: Build and push a Docker image automatically in a CI pipeline using GitHub Actions or Jenkins.
+**Hands-on Exercise**: Refactor your Dockerfile and application setup based on best practices.
+
+<p align="center">
+  <img src="https://path-to-your-image/docker-best-practices.png" alt="Docker Best Practices" width="600px">
+</p>
+*Infographic showcasing best practices for building Docker images and containers.*
 
 ---
 
 ## 🎯 Projects & Real-World Use Cases
 
-### Project 1: [Dockerizing a Simple Web Application](./projects/web-app-dockerized)
-Learn how to containerize a simple web application (e.g., a Node.js or Python app) using Docker, Docker Compose, and persistent storage.
+### Project 1: [Building a Web Application with Docker](./projects/web-app-docker)
+Learn how to build a web application (Node.js or Python) using Docker. Manage dependencies, create a Dockerfile, and run the application in a container.
 
-### Project 2: [Dockerizing a Microservices Architecture](./projects/microservices-architecture)
-Containerize a microservices-based architecture with Docker Compose and container networking. Build and deploy multiple services that work together in a containerized environment.
+<p align="center">
+  <img src="https://path-to-your-image/docker-web-app-project.png" alt="Docker Web App Project Example" width="600px">
+</p>
+
+### Project 2: [Docker Compose for Microservices](./projects/docker-compose-microservices)
+Deploy a microservices architecture using Docker Compose, connecting multiple services and managing them as a single application.
 
 ---
 
 ## 🛠 Contributing
 
-We welcome contributions from the community! If you'd like to add new modules, improve existing content, or fix issues, please follow the contribution guidelines below:
+We welcome contributions from the community! Whether it's adding new modules, improving existing content, or fixing issues, your input is valued.
 
 ### How to Contribute:
 1. Fork this repository.
 2. Create a new branch for your feature or fix.
-3. Commit your changes and create a pull request.
+3. Commit your changes and submit a pull request.
 
-For more details, please check the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
+For more details, please refer to the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
 
 ---
 
 ## 📞 Support & Questions
 
-If you have any questions or need help, feel free to open an issue or reach out via GitHub Discussions. You can also drop an email to [vijay.saravanan0707@gmail.com](mailto:vijay.saravanan0707@gmail.com?subject=Docker-101)
-We’re happy to help you on your Docker learning journey!
+If you have any questions or need help, feel free to open an issue or reach out via GitHub Discussions. You can also drop an email to [vijay.saravanan0707@gmail.com](mailto:vijay.saravanan0707@gmail.com?subject=Docker-101).
+We’re here to support your Kubernetes learning journey!
 
 ---
 
 ## ⭐️ Show Your Support
 
-If you find this series helpful, feel free to star the repository! It helps others discover this resource and motivates us to keep improving the content.
+If you find this series helpful, please consider starring the repository! It helps others discover this resource and encourages us to keep improving the content.
 
 ---
 
-**Happy Learning! 🚢 🐳**
+**Happy Learning! 🚀 🐳**
 
----
-
-This README introduces learners to the Docker 101 series, provides clear navigation, and outlines the key learning objectives for each module. Let me know if you'd like to tweak or add any specific sections!
