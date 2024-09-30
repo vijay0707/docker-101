@@ -29,7 +29,7 @@ There are no strict prerequisites for this series, but familiarity with command 
 ## 📚 Table of Contents
 
 1. [Introduction to Docker](#module-1-introduction-to-docker)
-2. [Docker Architecture](#module-2-docker-architecture)
+2. [Docker Basics & Commands](#module-2-docker-basics-&-commands)
 3. [Working with Docker Images](#module-3-working-with-docker-images)
 4. [Running Docker Containers](#module-4-running-docker-containers)
 5. [Docker Networking](#module-5-docker-networking)
@@ -56,26 +56,17 @@ docker --version
 ## 📘 Modules Overview
 
 ### Module 1: [Introduction to Docker](./01-introduction-to-docker)
-Learn the basics of Docker, the problems it solves, and the core concepts of containerization. This module explains why Docker is essential for modern software development and deployment.
+Learn the basics of Docker, the problems it solves, and the core concepts of containerization. Understand the architecture of Docker, including the Docker Engine, images, containers, and the Docker daemon. Learn how these components work together to facilitate containerization.
 
 **Hands-on Exercise**: Install Docker and run your first Docker container.
 
-<p align="center">
-  <img src="https://path-to-your-image/docker-overview.png" alt="Docker Overview" width="600px">
-</p>
-*Diagram illustrating the Docker ecosystem and its components.*
-
 ---
 
-### Module 2: [Docker Architecture](./02-architecture)
-Understand the architecture of Docker, including the Docker Engine, images, containers, and the Docker daemon. Learn how these components work together to facilitate containerization.
+### Module 2: [Docker Basics & Commands](./02-docker-basics-&-commands)
+Learn basic Docker commands to manage containers, images and viewing container logs.
 
 **Hands-on Exercise**: Explore the Docker architecture by running basic Docker commands.
 
-<p align="center">
-  <img src="https://path-to-your-image/docker-architecture.png" alt="Docker Architecture" width="600px">
-</p>
-*Diagram showing the Docker architecture, including the Docker daemon and client interaction.*
 
 ---
 
