@@ -55,7 +55,7 @@ docker --version
 
 ## 📘 Modules Overview
 
-### Module 1: [Introduction to Docker](./01-introduction)
+### Module 1: [Introduction to Docker](./01-introduction-to-docker)
 Learn the basics of Docker, the problems it solves, and the core concepts of containerization. This module explains why Docker is essential for modern software development and deployment.
 
 **Hands-on Exercise**: Install Docker and run your first Docker container.
