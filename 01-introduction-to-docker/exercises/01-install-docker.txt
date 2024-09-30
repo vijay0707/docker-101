@@ -1,0 +1,4 @@
+EXERCISE - 01
+
+- Install Docker Locally
+- run: "docker --version" to verify docker installation

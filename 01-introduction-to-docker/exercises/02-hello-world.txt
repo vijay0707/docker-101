@@ -1,0 +1,6 @@
+EXERCISE - 02
+
+- run: "docker run hello-world"
+- This command will download a simple Docker image and run it in a container. You should see a message saying "Hello from Docker!" if everything is set up correctly.
+
+
