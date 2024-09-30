@@ -29,7 +29,7 @@ There are no strict prerequisites for this series, but familiarity with command 
 ## 📚 Table of Contents
 
 1. [Introduction to Docker](#module-1-introduction-to-docker)
-2. [Docker Basics & Commands](#module-2-docker-basics-&-commands)
+2. [Docker Basics & Commands](#module-2-docker-basics--commands)
 3. [Working with Docker Images](#module-3-working-with-docker-images)
 4. [Running Docker Containers](#module-4-running-docker-containers)
 5. [Docker Networking](#module-5-docker-networking)
