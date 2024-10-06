@@ -55,7 +55,7 @@ Learn the basics of Docker, the problems it solves, and the core concepts of con
 
 ---
 
-### **[Module 2: Docker Basics & Commands](./02-basic-commands)**
+### **[Module 2: Docker Basics & Commands](./02-docker-basic-commands)**
 Learn basic Docker commands to manage containers, images, and view container logs.
 
 **Hands-on Exercise**: Explore the Docker architecture by running basic Docker commands.
