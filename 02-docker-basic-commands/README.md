@@ -126,4 +126,4 @@ This module is organized as follows:
 
 ### 🚀 Next Steps
 
-Now that you’ve mastered the basics of Docker commands, continue with [**Module 3: Docker Images & Dockerfile**](https://www.notion.so/03-images-dockerfile/README.md) to learn how to create and manage Docker images.
+Now that you’ve mastered the basics of Docker commands, continue with [**Module 3: Docker Images & Dockerfile**](../03-images-dockerfile/README.md) to learn how to create and manage Docker images.
